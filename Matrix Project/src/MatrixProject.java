@@ -171,10 +171,22 @@ public class MatrixProject
 					}
 				
 				checkBoard[row][col] = "w";
-//				if((checkBoard[row - 1][col - 1]).equals("b"))
-//					{
-//				checkBoard[row - 1][col + 1] = " ";
-//					}
+				if((checkBoard[row - 1][col + 1]).equals("b"))
+					{
+				checkBoard[row - 1][col + 1] = " ";
+					}
+				else if((checkBoard[row + 1][col - 1]).equals("b"))
+					{
+				checkBoard[row + 1][col - 1] = " ";
+					}
+				else if((checkBoard[row - 1][col - 1]).equals("b"))
+					{
+				checkBoard[row - 1][col - 1] = " ";
+					}
+				else if((checkBoard[row + 1][col + 1]).equals("b"))
+					{
+				checkBoard[row + 1][col + 1] = " ";
+					}
 				displayBoard();
 		
 		}
